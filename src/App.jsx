@@ -1,11 +1,7 @@
 import { useState } from 'react'
-import PanoramaMarzipano from "./components/PanoramaMarzipano";
 import './App.css'
-import  basicImg from "./assets/base.jpg";
-import shubhamHouse from "./assets/shubham.jpg";
-import KrpanoViewer from "./components/KrpanoViewer";
+import DubaiStyleKrpanoViewer from './components/DubaiStyleKrpanoViewer';
 function App() {
-  const [imageUrl, setImageUrl] = useState(basicImg);
   return (
     <>
       <div className="App">
@@ -14,12 +10,7 @@ function App() {
           <span>Virtual Tour.</span>
           <span className="cursor-pointer">Contact</span>
         </div>
-        <KrpanoViewer />
-        {/* No pt-20 here */}
-        {/* <PanoramaMarzipano
-          imageUrl={imageUrl}
-          onShubhamHouseClick={() => setImageUrl(shubhamHouse)}
-        /> */}
+        <DubaiStyleKrpanoViewer/>
       </div>
     </>
   );
